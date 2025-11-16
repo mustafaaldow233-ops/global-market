@@ -1,1 +1,64 @@
+var languages = {
+  "ar": {
+    "site_title": "كونتيننتال ماركت",
+    "welcome_title": "مرحباً بك في أكبر منصة عالمية",
+    "welcome_desc": "تسوق – احجز – اطلب – كل العالم في تطبيق واحد",
 
+    "sec_commerce": "التجارة",
+    "sec_restaurants": "المطاعم",
+    "sec_travel": "السفر والطيران والفنادق",
+    "sec_cars": "السيارات",
+    "sec_mobiles": "الموبايلات",
+    "sec_electronics": "الإلكترونيات",
+    "sec_fashion": "الموضة",
+    "sec_food": "المنتجات الغذائية",
+
+    "footer_text": "© 2025 Continental Market – جميع الحقوق محفوظة"
+  },
+
+  "en": {
+    "site_title": "Continental Market",
+    "welcome_title": "Welcome to the largest global platform",
+    "welcome_desc": "Shop – Book – Order – The whole world in one app",
+
+    "sec_commerce": "Commerce",
+    "sec_restaurants": "Restaurants",
+    "sec_travel": "Travel & Hotels",
+    "sec_cars": "Cars",
+    "sec_mobiles": "Mobiles",
+    "sec_electronics": "Electronics",
+    "sec_fashion": "Fashion",
+    "sec_food": "Food Products",
+
+    "footer_text": "© 2025 Continental Market – All rights reserved"
+  },
+
+  "fr": {
+    "site_title": "Marché Continental",
+    "welcome_title": "Bienvenue sur la plus grande plateforme mondiale",
+    "welcome_desc": "Acheter – Réserver – Commander – Le monde entier dans une seule application",
+
+    "sec_commerce": "Commerce",
+    "sec_restaurants": "Restaurants",
+    "sec_travel": "Voyage & Hôtels",
+    "sec_cars": "Voitures",
+    "sec_mobiles": "Téléphones",
+    "sec_electronics": "Électronique",
+    "sec_fashion": "Mode",
+    "sec_food": "Produits alimentaires",
+
+    "footer_text": "© 2025 Marché Continental – Tous droits réservés"
+  }
+};
+
+
+function loadLang(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    let key = el.getAttribute("data-i18n");
+    el.innerHTML = languages[lang][key];
+  });
+}
+
+function changeLang(lang) {
+  loadLang(lang);
+}
