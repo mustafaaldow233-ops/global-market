@@ -1,89 +1,37 @@
-// 🌍 ملف الترجمة الكامل للموقع — lang.js
-
 const translations = {
-    "ar": {
-        "home": "الرئيسية",
-        "products": "المنتجات",
-        "services": "الخدمات",
-        "about": "من نحن",
-        "contact": "اتصل بنا",
-        "search": "ابحث هنا...",
-        "welcome": "مرحباً بك في سوق العالم",
-        "categories": "الأقسام",
-        "language": "اللغة",
-        "buy_now": "اشترِ الآن",
-        "latest_products": "أحدث المنتجات",
-        "offers": "العروض المميزة",
-        "footer_rights": "جميع الحقوق محفوظة © 2025"
-    },
+  ar: {
+    title: "السوق العالمي",
+    footer_text: "جميع الحقوق محفوظة © السوق العالمي",
 
-    "en": {
-        "home": "Home",
-        "products": "Products",
-        "services": "Services",
-        "about": "About Us",
-        "contact": "Contact",
-        "search": "Search...",
-        "welcome": "Welcome to Global Market",
-        "categories": "Categories",
-        "language": "Language",
-        "buy_now": "Buy Now",
-        "latest_products": "Latest Products",
-        "offers": "Special Offers",
-        "footer_rights": "All Rights Reserved © 2025"
-    },
+    cat_cars: "السيارات",
+    cat_phones: "الهواتف",
+    cat_real: "العقارات",
+    cat_elec: "الإلكترونيات",
+    cat_jobs: "الوظائف",
+    cat_animals: "الحيوانات",
+    cat_fashion: "الأزياء",
+    cat_services: "الخدمات"
+  },
 
-    "es": {
-        "home": "Inicio",
-        "products": "Productos",
-        "services": "Servicios",
-        "about": "Sobre Nosotros",
-        "contact": "Contacto",
-        "search": "Buscar...",
-        "welcome": "Bienvenido a Global Market",
-        "categories": "Categorías",
-        "language": "Idioma",
-        "buy_now": "Comprar Ahora",
-        "latest_products": "Productos Recientes",
-        "offers": "Ofertas Especiales",
-        "footer_rights": "Todos los derechos reservados © 2025"
-    },
+  en: {
+    title: "Global Market",
+    footer_text: "All rights reserved © Global Market",
 
-    "fr": {
-        "home": "Accueil",
-        "products": "Produits",
-        "services": "Services",
-        "about": "À propos",
-        "contact": "Contact",
-        "search": "Rechercher...",
-        "welcome": "Bienvenue à Global Market",
-        "categories": "Catégories",
-        "language": "Langue",
-        "buy_now": "Acheter Maintenant",
-        "latest_products": "Derniers Produits",
-        "offers": "Offres Spéciales",
-        "footer_rights": "Tous droits réservés © 2025"
-    }
+    cat_cars: "Cars",
+    cat_phones: "Phones",
+    cat_real: "Real Estate",
+    cat_elec: "Electronics",
+    cat_jobs: "Jobs",
+    cat_animals: "Animals",
+    cat_fashion: "Fashion",
+    cat_services: "Services"
+  }
 };
 
-// ⭐ وظيفة تغيير اللغة على الموقع
-function setLanguage(lang) {
-    localStorage.setItem("site_lang", lang);
-    applyTranslations();
+function setLang(lang) {
+  localStorage.setItem("lang", lang);
+  for (let key in translations[lang]) {
+    let elem = document.getElementById(key);
+    if (elem) elem.textContent = translations[lang][key];
+  }
 }
-
-// ⭐ تطبيق الترجمة على كل العناصر
-function applyTranslations() {
-    const lang = localStorage.getItem("site_lang") || "ar";
-    const elements = document.querySelectorAll("[data-translate]");
-
-    elements.forEach((el) => {
-        const key = el.getAttribute("data-translate");
-        if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-}
-
-// ⭐ تشغيل الترجمة تلقائياً عند تحميل الصفحة
-document.addEventListener("DOMContentLoaded", applyTranslations);
