@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>المحادثة</title></head><body style="font-family:Arial;padding:20px">
+<h2>المحادثة بين البائع والزبون</h2>
+<div id="msgs" style="border:1px solid #ccc;padding:10px;height:300px;overflow:auto;background:#fafafa"></div>
+<input id="m" style="width:80%"><button onclick="send()">إرسال</button>
+<script>
+ if(!localStorage.getItem('username')){ alert('سجل الدخول للمحادثة'); window.location='login.html'; }
+ function send(){
+   const t=document.getElementById('m').value.trim();
+   if(!t) return;
+   const u=localStorage.getItem('username');
+   const box=document.getElementById('msgs');
+   box.innerHTML += '<div><b>'+u+':</b> '+t+'</div>';
+   document.getElementById('m').value='';
+ }
+</script>
+</body></html>
