@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>إضافة منتج</title></head>
+<body style="font-family:Arial;padding:20px">
+<h2>إضافة منتج (للتجار)</h2>
+<p>لإضافة منتج يجب تسجيل الدخول.</p>
+<button onclick="go()">ابدأ</button>
+<script>
+ function go(){
+   if(!localStorage.getItem('username')){ alert('سجل الدخول'); window.location='login.html'; return; }
+   if(localStorage.getItem('subscribed')!=='true'){ if(confirm('يجب أن تكون مشتركاً لإضافة منتجات. الاشتراك الآن؟')) window.location='subscribe.html'; return; }
+   const title = prompt('اسم المنتج'); if(!title) return;
+   alert('تمت إضافة المنتج (تجريبي): '+title);
+ }
+</script>
+</body></html>
