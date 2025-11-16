@@ -35,3 +35,41 @@ function setLang(lang) {
     if (elem) elem.textContent = translations[lang][key];
   }
 }
+// ---------------------
+// 🔵 صفحة الإعلانات
+// ---------------------
+ar.ads = {
+    title: "الإعلانات",
+    add_ad: "إضافة إعلان جديد",
+    category: "القسم",
+    name: "الاسم",
+    phone: "رقم الهاتف",
+    description: "الوصف",
+    upload_images: "رفع الصور",
+    submit: "نشر الإعلان",
+    recent_ads: "أحدث الإعلانات",
+};
+
+en.ads = {
+    title: "Ads",
+    add_ad: "Add New Ad",
+    category: "Category",
+    name: "Name",
+    phone: "Phone Number",
+    description: "Description",
+    upload_images: "Upload Images",
+    submit: "Post Ad",
+    recent_ads: "Recent Ads",
+};
+
+fr.ads = {
+    title: "Annonces",
+    add_ad: "Ajouter une annonce",
+    category: "Catégorie",
+    name: "Nom",
+    phone: "Numéro de téléphone",
+    description: "Description",
+    upload_images: "Télécharger des images",
+    submit: "Publier",
+    recent_ads: "Annonces récentes",
+};
