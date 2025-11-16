@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="add_product_title"></title>
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1 data-i18n="add_product_title"></h1>
+
+    <select id="langSelect" onchange="changeLang(this.value)">
+      <option value="ar">عربي</option>
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+    </select>
+  </header>
+
+  <div class="form-container">
+
+    <h2 data-i18n="add_product_header"></h2>
+
+    <label data-i18n="product_name"></label>
+    <input type="text">
+
+    <label data-i18n="product_price"></label>
+    <input type="number">
+
+    <label data-i18n="product_desc"></label>
+    <textarea></textarea>
+
+    <label data-i18n="product_image"></label>
+    <input type="file">
+
+    <button class="btn" data-i18n="upload_btn"></button>
+
+  </div>
+
+  <footer>
+    <p data-i18n="footer_text"></p>
+  </footer>
+
+  <script>
+    window.onload = () => loadLang('ar');
+  </script>
+
+</body>
+
+</html>
