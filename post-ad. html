@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة إعلان | Continental Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lang.js" defer></script>
+
+    <style>
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .form-container input,
+        .form-container textarea,
+        .form-container select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .submit-btn {
+            background: #0078ff;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Continental Market</div>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="ads.html">إعلاناتي</a>
+        <a href="profile.html">البروفايل</a>
+        <button class="lang-btn" onclick="toggleLang()">🌍 اللغة</button>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h2 class="page-title">إضافة إعلان جديد</h2>
+
+    <div class="form-container">
+
+        <label>عنوان الإعلان:</label>
+        <input type="text" placeholder="مثال: موبايل سامسونج A12">
+
+        <label>الوصف:</label>
+        <textarea rows="5" placeholder="اكتب تفاصيل الإعلان..."></textarea>
+
+        <label>السعر:</label>
+        <input type="number" placeholder="مثال: 85000">
+
+        <label>الدولة:</label>
+        <select>
+            <option>السودان</option>
+            <option>السعودية</option>
+            <option>الإمارات</option>
+            <option>مصر</option>
+            <option>قطر</option>
+            <option>تركيا</option>
+            <option>الولايات المتحدة</option>
+        </select>
+
+        <label>القسم:</label>
+        <select>
+            <option>أجهزة موبايل</option>
+            <option>عقارات</option>
+            <option>سيارات</option>
+            <option>ملابس</option>
+            <option>إلكترونيات</option>
+            <option>أثاث</option>
+            <option>خدمات</option>
+            <option>حيوانات</option>
+            <option>وظائف</option>
+        </select>
+
+        <label>صور الإعلان:</label>
+        <input type="file" multiple>
+
+        <button class="submit-btn">نشر الإعلان</button>
+    </div>
+
+</div>
+
+<footer>جميع الحقوق محفوظة © Continental Market 2025</footer>
+
+</body>
+</html>
