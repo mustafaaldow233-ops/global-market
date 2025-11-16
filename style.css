@@ -1,42 +1,53 @@
 body {
     margin: 0;
-    font-family: Arial;
-    background: #f4f4f4;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f6f6f6;
     direction: rtl;
-    text-align: center;
 }
 
 header {
-    background: #0066ff;
+    background: #181f3a;
+    color: white;
     padding: 15px;
-    color: white;
+    text-align: center;
 }
 
-.logo {
-    width: 80px;
-}
-
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+header select {
+    padding: 6px;
+    margin-top: 8px;
 }
 
 .hero {
-    padding: 50px;
-    background: #0099ff;
-    color: white;
+    padding: 20px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0px 2px 6px #ccc;
 }
 
-.about, .services, .contact {
+.sections {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.box {
     background: white;
-    margin: 20px;
-    padding: 20px;
+    padding: 25px;
+    text-align: center;
     border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px #bbb;
+    text-decoration: none;
+    color: #181f3a;
+    font-size: 18px;
 }
 
 footer {
-    background: #0066ff;
-    color: white;
+    margin-top: 25px;
     padding: 10px;
+    text-align: center;
+    background: #181f3a;
+    color: white;
 }
