@@ -1,64 +1,41 @@
-var languages = {
-  "ar": {
-    "site_title": "كونتيننتال ماركت",
-    "welcome_title": "مرحباً بك في أكبر منصة عالمية",
-    "welcome_desc": "تسوق – احجز – اطلب – كل العالم في تطبيق واحد",
+"coming_soon": "سيتم إضافة المنتجات قريباً",
 
-    "sec_commerce": "التجارة",
-    "sec_restaurants": "المطاعم",
-    "sec_travel": "السفر والطيران والفنادق",
-    "sec_cars": "السيارات",
-    "sec_mobiles": "الموبايلات",
-    "sec_electronics": "الإلكترونيات",
-    "sec_fashion": "الموضة",
-    "sec_food": "المنتجات الغذائية",
+// التجارة
+"commerce_title": "قسم التجارة",
+"commerce_header": "جميع المنتجات التجارية",
+"commerce_desc": "اكتشف آلاف المنتجات المحلية والعالمية",
 
-    "footer_text": "© 2025 Continental Market – جميع الحقوق محفوظة"
-  },
+// المطاعم
+"restaurants_title": "قسم المطاعم",
+"restaurants_header": "أفضل المطاعم حول العالم",
+"restaurants_desc": "اكتشف اطعمة من جميع الدول",
 
-  "en": {
-    "site_title": "Continental Market",
-    "welcome_title": "Welcome to the largest global platform",
-    "welcome_desc": "Shop – Book – Order – The whole world in one app",
+// السفر
+"travel_title": "السفر والفنادق",
+"travel_header": "احجز رحلتك الآن",
+"travel_desc": "عروض فندقية وطيران لجميع الدول",
 
-    "sec_commerce": "Commerce",
-    "sec_restaurants": "Restaurants",
-    "sec_travel": "Travel & Hotels",
-    "sec_cars": "Cars",
-    "sec_mobiles": "Mobiles",
-    "sec_electronics": "Electronics",
-    "sec_fashion": "Fashion",
-    "sec_food": "Food Products",
+// السيارات
+"cars_title": "قسم السيارات",
+"cars_header": "أفضل السيارات",
+"cars_desc": "سيارات جديدة ومستعملة للبيع",
 
-    "footer_text": "© 2025 Continental Market – All rights reserved"
-  },
+// الموبايلات
+"mobiles_title": "قسم الموبايلات",
+"mobiles_header": "أحدث الهواتف",
+"mobiles_desc": "أفضل عروض الهواتف الذكية",
 
-  "fr": {
-    "site_title": "Marché Continental",
-    "welcome_title": "Bienvenue sur la plus grande plateforme mondiale",
-    "welcome_desc": "Acheter – Réserver – Commander – Le monde entier dans une seule application",
+// الإلكترونيات
+"electronics_title": "قسم الإلكترونيات",
+"electronics_header": "كل الأجهزة الإلكترونية",
+"electronics_desc": "أجهزة أصلية مع ضمان",
 
-    "sec_commerce": "Commerce",
-    "sec_restaurants": "Restaurants",
-    "sec_travel": "Voyage & Hôtels",
-    "sec_cars": "Voitures",
-    "sec_mobiles": "Téléphones",
-    "sec_electronics": "Électronique",
-    "sec_fashion": "Mode",
-    "sec_food": "Produits alimentaires",
+// الموضة
+"fashion_title": "قسم الموضة",
+"fashion_header": "أحدث الملابس",
+"fashion_desc": "ملابس – أحذية – اكسسوارات",
 
-    "footer_text": "© 2025 Marché Continental – Tous droits réservés"
-  }
-};
-
-
-function loadLang(lang) {
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    let key = el.getAttribute("data-i18n");
-    el.innerHTML = languages[lang][key];
-  });
-}
-
-function changeLang(lang) {
-  loadLang(lang);
-}
+// الأغذية
+"food_title": "قسم المنتجات الغذائية",
+"food_header": "أطعمة متنوعة",
+"food_desc": "منتجات غذائية عالمية ومحلية"
