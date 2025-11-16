@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/main.js" defer></script>
+
+    <title>الإعلانات</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f0f2f5;
+        }
+
+        .ads-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .ad-box {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .ad-box h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .ad-banner {
+            width: 100%;
+            height: 150px;
+            background: #d9d9d9;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .upload-btn {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            margin-top: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ads-container">
+
+        <h2>إدارة الإعلانات</h2>
+        <p>هنا تقدر تضيف وتعدل الإعلانات في موقعك.</p>
+
+        <!-- إعلان أعلى الصفحة -->
+        <div class="ad-box">
+            <h3>إعلان أعلى الموقع (Header)</h3>
+            <div class="ad-banner">مكان الإعلان</div>
+            <button class="upload-btn">رفع إعلان جديد</button>
+        </div>
+
+        <!-- إعلان مربع -->
+        <div class="ad-box">
+            <h3>إعلان جانبي (300x300)</h3>
+            <div class="ad-banner" style="height:300px;">مكان الإعلان</div>
+            <button class="upload-btn">رفع إعلان جديد</button>
+        </div>
+
+        <!-- إعلان كبير -->
+        <div class="ad-box">
+            <h3>إعلان كبير (728x90)</h3>
+            <div class="ad-banner" style="height:90px;">مكان الإعلان</div>
+            <button class="upload-btn">رفع إعلان جديد</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
