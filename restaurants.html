@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>قسم المطاعم</title>
-
-    <link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المطاعم | Continental Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lang.js" defer></script>
 </head>
 
 <body>
 
-    <!-- الهيدر -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="commerce.html">التجارة</a></li>
-                <li><a href="restaurants.html">المطاعم</a></li>
-                <li><a href="travel.html">السياحة والفنادق</a></li>
-                <li><a href="ads.html">الإعلانات</a></li>
-                <li><a href="profile.html">الملف الشخصي</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <div class="logo">Continental Market</div>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="categories.html">الأقسام</a>
+        <a href="profile.html">الملف الشخصي</a>
+        <button class="lang-btn" onclick="toggleLang()">🌍 اللغة</button>
+    </nav>
+</header>
 
-    <div class="page-container">
+<div class="container">
+    <h2 class="page-title">المطاعم</h2>
+    <p class="intro-text">ابحث عن المطاعم حسب الدولة أو المدينة.</p>
 
-        <h2>قسم المطاعم</h2>
-        <p>اكتشف أفضل المطاعم حسب الدولة أو حسب نوع الطعام.</p>
+    <div class="filters">
+        <select>
+            <option>اختر الدولة</option>
+            <option>السودان</option>
+            <option>مصر</option>
+            <option>السعودية</option>
+            <option>الإمارات</option>
+        </select>
 
-        <div class="item-grid">
+        <select>
+            <option>نوع المطعم</option>
+            <option>مشويات</option>
+            <option>وجبات سريعة</option>
+            <option>مأكولات بحرية</option>
+            <option>مخبوزات</option>
+        </select>
 
-            <div class="item-box">
-                <img src="assets/food1.jpg" class="item-img">
-                <h3>مطاعم عالمية</h3>
-                <p>مطاعم مشهورة حول العالم.</p>
-            </div>
+        <button class="search-btn">بحث 🔍</button>
+    </div>
 
-            <div class="item-box">
-                <img src="assets/food2.jpg" class="item-img">
-                <h3>مطاعم محلية</h3>
-                <p>مطاعم من دولتك أو المدينة الخاصة بك.</p>
-            </div>
+    <div class="grid">
 
-            <div class="item-box">
-                <img src="assets/food3.jpg" class="item-img">
-                <h3>مطاعم الوجبات السريعة</h3>
-                <p>عروض ووجبات سريعة بأسعار مناسبة.</p>
-            </div>
+        <div class="product-card">
+            <img src="assets/food1.jpg" alt="">
+            <h3>مطعم النيل</h3>
+            <p>وجبات سودانية شعبية.</p>
+        </div>
 
+        <div class="product-card">
+            <img src="assets/food2.jpg" alt="">
+            <h3>بيتزا هوم</h3>
+            <p>بيتزا – باستا – إيطالي.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/food3.jpg" alt="">
+            <h3>فرايد تشيكن</h3>
+            <p>وجبات سريعة.</p>
         </div>
 
     </div>
 
+</div>
+
+<footer>جميع الحقوق محفوظة © Continental Market 2025</footer>
+
 </body>
-</html>
+    </html>
