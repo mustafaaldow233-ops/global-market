@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاشتراك - السوق العالمي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: #222;
+            padding: 15px;
+            color: #fff;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            background: #fff;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        .plan-box {
+            border: 2px solid #0275d8;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .plan-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 26px;
+            color: green;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #0275d8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background: #025aa5;
+        }
+
+        .note {
+            margin-top: 20px;
+            color: #777;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">الاشتراك في السوق العالمي</div>
+
+    <div class="container">
+
+        <div class="plan-box">
+            <div class="plan-title">الاشتراك الشهري</div>
+            <div class="price">10$</div>
+            <button onclick="subscribe()">اشترك الآن</button>
+        </div>
+
+        <p class="note">
+            بعد الاشتراك سيتم تفعيل حسابك والدخول إلى صفحة المنتجات مباشرة.
+        </p>
+
+    </div>
+
+    <script>
+        function subscribe() {
+            alert("تم إرسال طلب الاشتراك! سيتم تفعيل الحساب قريباً.");
+            window.location.href = "product.html";
+        }
+    </script>
+
+</body>
+</html>
