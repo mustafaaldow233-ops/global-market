@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>تسجيل الدخول</title></head>
-<body style="font-family:Arial;padding:20px">
-<h2>تسجيل الدخول</h2>
-<input id="u" placeholder="اسم المستخدم"><br><br>
-<input id="p" type="password" placeholder="كلمة المرور"><br><br>
-<button onclick="login()">دخول</button>
-<script>
- function login(){
-   const u=document.getElementById('u').value.trim();
-   if(!u){alert('ضع اسم المستخدم');return;}
-   localStorage.setItem('username',u);
-   alert('تم تسجيل الدخول');
-   window.location='profile.html';
- }
-</script>
-</body></html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تسجيل دخول</title>
+<style>
+body { font-family: sans-serif; background:#f0f0f0; padding:40px; }
+form { background:white; padding:20px; border-radius:10px; width:300px; margin:auto; }
+input { width:100%; margin-bottom:10px; padding:10px; }
+button { width:100%; padding:10px; background:#2a72ff; color:white; border:none; border-radius:5px; }
+</style>
+</head>
+
+<body>
+<form>
+<h3>تسجيل دخول</h3>
+<input type="email" placeholder="البريد الإلكتروني">
+<input type="password" placeholder="كلمة السر">
+<button>تسجيل دخول</button>
+<p>ما عندك حساب؟ <a href="register.html">إنشاء حساب</a></p>
+</form>
+</body>
+</html>
