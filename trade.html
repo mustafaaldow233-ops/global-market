@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسم التجارة | Continental Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lang.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Continental Market</div>
+
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="categories.html">الأقسام</a>
+            <a href="profile.html">الملف الشخصي</a>
+            <button class="lang-btn" onclick="toggleLang()">🌍 اللغة</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 id="trade-title" class="page-title">التجارة</h2>
+
+        <p class="intro-text">
+            هنا تجد جميع المنتجات التجارية — أجهزة، ملابس، مواد غذائية، أدوات منزلية، وإلكترونيات.
+        </p>
+
+        <!-- Filters -->
+        <div class="filters">
+            <select id="country-filter">
+                <option value="">اختر الدولة</option>
+                <option>السودان</option>
+                <option>مصر</option>
+                <option>السعودية</option>
+                <option>قطر</option>
+                <option>الإمارات</option>
+                <option>تركيا</option>
+                <option>الهند</option>
+                <option>الصين</option>
+            </select>
+
+            <select id="type-filter">
+                <option value="">نوع المنتج</option>
+                <option>إلكترونيات</option>
+                <option>ملابس</option>
+                <option>أدوات منزلية</option>
+                <option>مواد غذائية</option>
+                <option>معدات</option>
+            </select>
+
+            <button class="search-btn">بحث 🔍</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid">
+
+            <div class="product-card">
+                <img src="assets/electronics.jpg" alt="">
+                <h3>إلكترونيات</h3>
+                <p>أحدث أجهزة ومستلزمات التقنية.</p>
+                <a href="electronics.html" class="btn">عرض المنتجات</a>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/clothes.jpg" alt="">
+                <h3>ملابس</h3>
+                <p>ملابس رجالية – نسائية – أطفال.</p>
+                <a href="clothes.html" class="btn">عرض المنتجات</a>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/home.jpg" alt="">
+                <h3>أدوات منزلية</h3>
+                <p>أواني – أثاث – ديكورات.</p>
+                <a href="home.html" class="btn">عرض المنتجات</a>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/food.jpg" alt="">
+                <h3>منتجات غذائية</h3>
+                <p>تمور – زيوت – مواد غذائية متنوعة.</p>
+                <a href="foods.html" class="btn">عرض المنتجات</a>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/tools.jpg" alt="">
+                <h3>معدات</h3>
+                <p>معدات بناء وزراعة وصيانة.</p>
+                <a href="tools.html" class="btn">عرض المنتجات</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        جميع الحقوق محفوظة © Continental Market 2025
+    </footer>
+
+</body>
+</html>
