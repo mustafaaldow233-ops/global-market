@@ -48,3 +48,17 @@ body {
   color: white;
   margin-top: 20px;
 }
+.top-nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+.top-nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.top-nav a:hover {
+    color: #ffd700;
+} 
