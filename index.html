@@ -1,36 +1,108 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>السوق العالمي</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>السوق العالمي</title>
+
+  <!-- ملف التنسيق -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- بيانات للبحث/سيو -->
+  <meta name="description" content="أفضل المنتجات والخدمات في مكان واحد — السوق العالمي" />
 </head>
-
 <body>
+  <header>
+    <div class="container">
+      <h1>مرحباً بكم في السوق العالمي</h1>
+      <p class="subtitle">أفضل المنتجات والخدمات في مكان واحد</p>
 
-    <header class="hero">
-        <h1>مرحباً بكم في السوق العالمي</h1>
-        <p>أفضل المنتجات والخدمات في مكان واحد</p>
-    </header>
-
-    <section class="services">
-        <h2>خدماتنا</h2>
+      <nav>
         <ul>
-            <li>بيع منتجات متنوعة</li>
-            <li>دعم متواصل 24/7</li>
-            <li>شحن سريع لكل المناطق</li>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="product.html">المنتجات</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+          <li><a href="dashboard.html">لوحة البائع</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- أقسام / تصنيفات -->
+    <section id="categories">
+      <h2>الأقسام</h2>
+      <ul class="categories-list">
+        <li>إلكترونيات</li>
+        <li>الملابس</li>
+        <li>التجميل والعناية</li>
+        <li>المنزل والمطبخ</li>
+        <li>رياضة وهوايات</li>
+      </ul>
     </section>
 
-    <section class="contact">
-        <h2>تواصل معنا</h2>
-        <p>واتساب: 0000000000</p>
+    <!-- المنتجات (أمثلة) -->
+    <section id="products">
+      <h2>منتجات مميزة</h2>
+      <div class="products-grid">
+        <article class="product">
+          <img src="assets/images/product1.jpg" alt="منتج 1" />
+          <h3>منتج 1</h3>
+          <p class="price">سعر: $10</p>
+        </article>
+
+        <article class="product">
+          <img src="assets/images/product2.jpg" alt="منتج 2" />
+          <h3>منتج 2</h3>
+          <p class="price">سعر: $25</p>
+        </article>
+
+        <!-- أضف المزيد حسب الحاجة -->
+      </div>
     </section>
 
-    <footer>
-        <p>© 2025 — جميع الحقوق محفوظة</p>
-    </footer>
+    <!-- خدمات -->
+    <section id="services">
+      <h2>خدماتنا</h2>
+      <ul>
+        <li>بيع منتجات متنوعة</li>
+        <li>دعم متواصل 24/7</li>
+        <li>شحن سريع لجميع المناطق</li>
+      </ul>
+    </section>
 
+    <!-- كيفية الربح من الإعلانات -->
+    <section id="ads">
+      <h2>كيف أكسب من الإعلانات</h2>
+      <ol>
+        <li>سجل في Google AdSense أو شبكات إعلانية أخرى.</li>
+        <li>ضع كود الإعلانات في القوالب (مثلاً داخل &lt;header&gt; أو أسفل المقالات).</li>
+        <li>اختبر مواضع الإعلانات: أعلى الصفحة، بين المنتجات، في الشريط الجانبي.</li>
+        <li>لا تضع إعلانات على صفحات محظورة أو ضد سياسة المنصة.</li>
+        <li>ابدأ بتتبع الأرباح وحسّن أماكن العرض لزيادة CTR.</li>
+      </ol>
+
+      <!-- مكان لوضع كود اعلان AdSense -->
+      <!-- ضع كود الإعلانات هنا عند الموافقة: -->
+      <!-- <div class="ad-slot">ضع هنا كود AdSense بعد الموافقة</div> -->
+    </section>
+
+    <!-- تواصل -->
+    <section id="contact">
+      <h2>تواصل معنا</h2>
+      <p>واتساب: 0000000000</p>
+      <p>البريد: example@example.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 — جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <!-- ملفات الجافاسكربت -->
+  <script src="assets/js/main.js"></script>
 </body>
-</html>
+    </html>
