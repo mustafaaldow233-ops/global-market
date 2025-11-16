@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لوحة التحكم - السوق العالمي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .navbar {
+            background: #222;
+            color: #fff;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .logout-btn {
+            background: red;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            gap: 15px;
+        }
+
+        .product {
+            background: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 0 4px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .product h3 {
+            margin: 10px 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        السوق العالمي - لوحة التحكم
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>مرحباً <span id="username">العميل</span> 👋</h2>
+            <button class="logout-btn" onclick="logout()">تسجيل الخروج</button>
+        </div>
+
+        <div class="card">
+            <h2>المنتجات المقترحة</h2>
+
+            <div class="products-grid">
+
+                <div class="product">
+                    <img src="https://via.placeholder.com/200" alt="product">
+                    <h3>منتج 1</h3>
+                    <p>وصف بسيط للمنتج.</p>
+                </div>
+
+                <div class="product">
+                    <img src="https://via.placeholder.com/200" alt="product">
+                    <h3>منتج 2</h3>
+                    <p>وصف بسيط للمنتج.</p>
+                </div>
+
+                <div class="product">
+                    <img src="https://via.placeholder.com/200" alt="product">
+                    <h3>منتج 3</h3>
+                    <p>وصف بسيط للمنتج.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // استرجاع اسم المستخدم من التخزين
+        const user = localStorage.getItem("username");
+        if (user) {
+            document.getElementById("username").textContent = user;
+        }
+
+        function logout() {
+            localStorage.removeItem("username");
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>
