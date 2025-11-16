@@ -1,31 +1,48 @@
-<!-- مثال مقتطف من index.html -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Continental Market</title>
+<link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
+</head>
+
+<body>
+
 <header>
-  <div class="logo"> <span data-i18n="site_title"></span> </div>
+    <h1 data-i18n="site_title"></h1>
 
-  <!-- Language selector -->
-  <select id="langSelect" aria-label="change language" style="margin-left:12px;">
-    <!-- الخيارات تُملأ تلقائياً بواسطة lang.js -->
-  </select>
-
-  <nav>
-    <a href="index.html" data-i18n="nav_home"></a>
-    <a href="products.html" data-i18n="nav_products"></a>
-    <a href="categories.html" data-i18n="nav_categories"></a>
-    <a href="about.html" data-i18n="nav_about"></a>
-    <a href="contact.html" data-i18n="nav_contact"></a>
-  </nav>
+    <select id="langSelect" onchange="changeLang(this.value)">
+        <option value="ar">عربي</option>
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+    </select>
 </header>
 
-<section class="hero" id="home">
-  <h1 data-i18n="hero_title"></h1>
-  <p data-i18n="hero_sub"></p>
+<section class="hero">
+    <h2 data-i18n="welcome_title"></h2>
+    <p data-i18n="welcome_desc"></p>
 </section>
 
-<!-- ... في أسفل الصفحة -->
+<section class="sections">
+    <a href="#" class="box" data-i18n="sec_commerce"></a>
+    <a href="#" class="box" data-i18n="sec_restaurants"></a>
+    <a href="#" class="box" data-i18n="sec_travel"></a>
+    <a href="#" class="box" data-i18n="sec_cars"></a>
+    <a href="#" class="box" data-i18n="sec_mobiles"></a>
+    <a href="#" class="box" data-i18n="sec_electronics"></a>
+    <a href="#" class="box" data-i18n="sec_fashion"></a>
+    <a href="#" class="box" data-i18n="sec_food"></a>
+</section>
+
 <footer>
-  <p data-i18n="footer_copy"></p>
+    <p data-i18n="footer_text"></p>
 </footer>
 
-<!-- استدعاء ملفات الجافاسكربت -->
-<script src="assets/js/lang.js"></script>
-<script src="script.js"></script>
+<script>
+window.onload = () => loadLang('ar');
+</script>
+
+</body>
+      </html>
