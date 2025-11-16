@@ -2,90 +2,81 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/main.js" defer></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>الإعلانات</title>
 
-    <style>
-        body {
-            font-family: sans-serif;
-            background: #f0f2f5;
-        }
-
-        .ads-container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .ad-box {
-            background: #fafafa;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 20px;
-        }
-
-        .ad-box h3 {
-            margin: 0 0 10px 0;
-        }
-
-        .ad-banner {
-            width: 100%;
-            height: 150px;
-            background: #d9d9d9;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-
-        .upload-btn {
-            width: 100%;
-            padding: 12px;
-            background: #007bff;
-            color: #fff;
-            border: none;
-            margin-top: 10px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="lang.js"></script>
 </head>
 
 <body>
 
-    <div class="ads-container">
+    <!-- ======= الهيدر ======= -->
+    <header>
+        <h2 id="ads-title">الإعلانات</h2>
+    </header>
 
-        <h2>إدارة الإعلانات</h2>
-        <p>هنا تقدر تضيف وتعدل الإعلانات في موقعك.</p>
+    <!-- ======= نموذج إضافة إعلان ======= -->
+    <section class="add-ad-section">
+        <button id="add-ad-btn">إضافة إعلان جديد</button>
 
-        <!-- إعلان أعلى الصفحة -->
-        <div class="ad-box">
-            <h3>إعلان أعلى الموقع (Header)</h3>
-            <div class="ad-banner">مكان الإعلان</div>
-            <button class="upload-btn">رفع إعلان جديد</button>
-        </div>
+        <form id="ad-form" style="display:none; margin-top:20px;">
+            <label id="label-category">القسم</label>
+            <select id="category">
+                <option value="cars">سيارات</option>
+                <option value="phones">موبايلات</option>
+                <option value="electronics">الكترونيات</option>
+                <option value="rent">إيجار</option>
+                <option value="jobs">وظائف</option>
+                <option value="services">خدمات</option>
+            </select>
 
-        <!-- إعلان مربع -->
-        <div class="ad-box">
-            <h3>إعلان جانبي (300x300)</h3>
-            <div class="ad-banner" style="height:300px;">مكان الإعلان</div>
-            <button class="upload-btn">رفع إعلان جديد</button>
-        </div>
+            <label id="label-name">الاسم</label>
+            <input type="text" id="name" placeholder="اسم صاحب الإعلان" />
 
-        <!-- إعلان كبير -->
-        <div class="ad-box">
-            <h3>إعلان كبير (728x90)</h3>
-            <div class="ad-banner" style="height:90px;">مكان الإعلان</div>
-            <button class="upload-btn">رفع إعلان جديد</button>
-        </div>
+            <label id="label-phone">رقم الهاتف</label>
+            <input type="text" id="phone" placeholder="رقم الهاتف" />
 
-    </div>
+            <label id="label-description">الوصف</label>
+            <textarea id="description" placeholder="اكتب تفاصيل الإعلان"></textarea>
+
+            <label id="label-upload">رفع الصور</label>
+            <input type="file" id="images" multiple />
+
+            <button type="button" id="submit-btn">نشر الإعلان</button>
+        </form>
+    </section>
+
+    <!-- ======= الإعلانات الحديثة ======= -->
+    <section class="recent-ads-section">
+        <h3 id="recent-ads">أحدث الإعلانات</h3>
+        <div id="ads-container"></div>
+    </section>
+
+    <!-- ======= لغة الصفحة ======= -->
+    <script>
+        // ====== تحميل اللغة ======
+        function loadAdsLang() {
+            const lang = localStorage.getItem("lang") || "ar";
+
+            document.getElementById("ads-title").innerText = window[lang].ads.title;
+            document.getElementById("add-ad-btn").innerText = window[lang].ads.add_ad;
+            document.getElementById("label-category").innerText = window[lang].ads.category;
+            document.getElementById("label-name").innerText = window[lang].ads.name;
+            document.getElementById("label-phone").innerText = window[lang].ads.phone;
+            document.getElementById("label-description").innerText = window[lang].ads.description;
+            document.getElementById("label-upload").innerText = window[lang].ads.upload_images;
+            document.getElementById("submit-btn").innerText = window[lang].ads.submit;
+            document.getElementById("recent-ads").innerText = window[lang].ads.recent_ads;
+        }
+
+        window.onload = loadAdsLang;
+
+        // ====== إظهار نموذج الإعلان ======
+        document.getElementById("add-ad-btn").onclick = () => {
+            document.getElementById("ad-form").style.display = "block";
+        };
+    </script>
 
 </body>
-</html>
+    </html>
