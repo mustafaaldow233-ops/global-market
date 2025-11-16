@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ربط ملف التنسيقات -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- ربط ملف اللغات -->
+    <script src="assets/lang.js" defer></script>
+
+    <!-- ربط ملف وظائف الموقع -->
+    <script src="assets/main.js" defer></script>
+
+    <title>الملف الشخصي</title>
+
+    <style>
+        .profile-container {
+            max-width: 450px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .profile-container img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+            margin-bottom: 15px;
+        }
+
+        .profile-container h2 {
+            margin: 10px 0;
+        }
+
+        .profile-info {
+            margin-top: 20px;
+            text-align: left;
+            direction: rtl;
+        }
+
+        .profile-info p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        .edit-btn {
+            margin-top: 20px;
+            background: #007bff;
+            padding: 12px 20px;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-container">
+        <img src="assets/user.png" alt="User">
+
+        <h2>مصطفى مبارك</h2>
+        <p>عضو منذ: 2025</p>
+
+        <div class="profile-info">
+            <p><strong>البريد:</strong> example@gmail.com</p>
+            <p><strong>رقم الهاتف:</strong> +249 912 xxxx</p>
+            <p><strong>الدولة:</strong> السودان</p>
+            <p><strong>اللغة:</strong> العربية</p>
+        </div>
+
+        <button class="edit-btn">تعديل البيانات</button>
+    </div>
+
+</body>
+</html>
