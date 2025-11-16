@@ -1,11 +1,88 @@
-<a class="card" href="results.html?cat=cars">السيارات</a>
-<a class="card" href="results.html?cat=real-estate">العقارات</a>
-<a class="card" href="results.html?cat=phones">الهواتف</a>
-<a class="card" href="results.html?cat=electronics">إلكترونيات</a>
-<a class="card" href="results.html?cat=jobs">الوظائف</a>
-<a class="card" href="results.html?cat=services">الخدمات</a>
-<a class="card" href="results.html?cat=furniture">الأثاث</a>
-<a class="card" href="results.html?cat=animals">الحيوانات</a>
-<a class="card" href="results.html?cat=computers">كمبيوتر</a>
-<a class="card" href="results.html?cat=fashion">موضة</a>
-<a class="card" href="results.html?cat=tools">معدات</a>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأقسام | Continental Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lang.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Continental Market</div>
+
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="categories.html">الأقسام</a>
+            <a href="profile.html">الملف الشخصي</a>
+            <button class="lang-btn" onclick="toggleLang()">🌍 اللغة</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 style="margin-bottom:20px;">جميع الأقسام</h2>
+
+        <!-- Grid -->
+        <div class="grid">
+
+            <!-- قسم التجارة -->
+            <a href="trade.html" class="card">
+                <img src="assets/trade.jpg" alt="Trade">
+                <h3>التجارة</h3>
+                <p>منتجات – أجهزة – ملابس – أدوات منزلية</p>
+            </a>
+
+            <!-- قسم المطاعم -->
+            <a href="restaurants.html" class="card">
+                <img src="assets/food.jpg" alt="Restaurants">
+                <h3>المطاعم</h3>
+                <p>اكتشف المطاعم حسب الدولة والمدينة</p>
+            </a>
+
+            <!-- قسم الفنادق -->
+            <a href="hotels.html" class="card">
+                <img src="assets/hotel.jpg" alt="Hotels">
+                <h3>الفنادق</h3>
+                <p>افضل الفنادق المحلية والعالمية</p>
+            </a>
+
+            <!-- قسم الطيران -->
+            <a href="flights.html" class="card">
+                <img src="assets/plane.jpg" alt="Flights">
+                <h3>الطيران</h3>
+                <p>عروض السفر والرحلات حول العالم</p>
+            </a>
+
+            <!-- جميع الدول -->
+            <a href="countries.html" class="card">
+                <img src="assets/world.jpg" alt="Countries">
+                <h3>الدول</h3>
+                <p>اختر الدولة لعرض المنتجات والخدمات</p>
+            </a>
+
+            <!-- المنتجات الداخلية -->
+            <a href="local.html" class="card">
+                <img src="assets/local.jpg" alt="Internal">
+                <h3>المنتجات الداخلية</h3>
+                <p>منتجات داخل بلدك فقط</p>
+            </a>
+
+            <!-- المنتجات الخارجية -->
+            <a href="global.html" class="card">
+                <img src="assets/global.jpg" alt="Global">
+                <h3>المنتجات الخارجية</h3>
+                <p>منتجات من كل دول العالم</p>
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+        جميع الحقوق محفوظة © Continental Market 2025
+    </footer>
+
+</body>
+  </html>
