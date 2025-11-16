@@ -134,3 +134,36 @@ function initLangSwitcher() {
 
 // تأكيد التهيئة بعد تحميل DOM
 document.addEventListener('DOMContentLoaded', initLangSwitcher);
+// Login
+"login_title": "تسجيل الدخول",
+"login_header": "ادخل إلى حسابك",
+"email_label": "البريد الإلكتروني",
+"password_label": "كلمة المرور",
+"login_btn": "تسجيل الدخول",
+"no_account": "ليس لديك حساب؟",
+"register_now": "إنشاء حساب",
+
+// Register
+"register_title": "إنشاء حساب",
+"register_header": "معلومات الحساب",
+"name_label": "الاسم الكامل",
+"choose_type": "نوع الحساب",
+"normal_user": "مستخدم عادي",
+"merchant": "تاجر",
+"register_btn": "إنشاء حساب",
+"have_account": "لديك حساب مسبقاً؟",
+"login_now": "تسجيل الدخول",
+
+// Add Product
+"add_product_title": "رفع منتج",
+"add_product_header": "تفاصيل المنتج",
+"product_name": "اسم المنتج",
+"product_price": "سعر المنتج",
+"product_desc": "وصف المنتج",
+"product_image": "صورة المنتج",
+"upload_btn": "رفع المنتج",
+
+// Chat
+"chat_title": "المحادثة",
+"chat_welcome": "مرحبا! اكتب رسالتك للتاجر.",
+"send_btn": "إرسال"
