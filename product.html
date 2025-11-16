@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>المنتجات - السوق العالمي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        .navbar {
+            background: #222;
+            color: #fff;
+            padding: 15px;
+            font-size: 20px;
+            text-align: right;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: green;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .buy-btn {
+            background: #0275d8;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .buy-btn:hover {
+            background: #025aa5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        السوق العالمي - المنتجات
+    </div>
+
+    <div class="container">
+
+        <div class="products-grid">
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="product">
+                <h3>ساعة ذكية</h3>
+                <div class="price">20$</div>
+                <button class="buy-btn">شراء</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="product">
+                <h3>سماعات بلوتوث</h3>
+                <div class="price">15$</div>
+                <button class="buy-btn">شراء</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="product">
+                <h3>كيبورد مضيء</h3>
+                <div class="price">25$</div>
+                <button class="buy-btn">شراء</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="product">
+                <h3>ماوس وايرليس</h3>
+                <div class="price">10$</div>
+                <button class="buy-btn">شراء</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
