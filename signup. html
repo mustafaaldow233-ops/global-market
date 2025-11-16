@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل | السوق العالمي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 420px;
+            background: #fff;
+            margin: 50px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #27ae60;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #219150;
+        }
+
+        .note {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        a {
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>إنشاء حساب جديد</h2>
+
+        <label>الاسم الكامل</label>
+        <input type="text" placeholder="اكتب اسمك الكامل">
+
+        <label>البريد الإلكتروني</label>
+        <input type="email" placeholder="example@gmail.com">
+
+        <label>كلمة المرور</label>
+        <input type="password" placeholder="********">
+
+        <button>إنشاء حساب مجاني</button>
+
+        <p class="note">
+            لديك حساب؟  
+            <a href="login.html">تسجيل الدخول</a>
+        </p>
+    </div>
+
+</body>
+</html>
