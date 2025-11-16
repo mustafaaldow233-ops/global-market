@@ -1,48 +1,77 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Continental Market</title>
-<link rel="stylesheet" href="style.css">
-<script src="lang.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>السوق العالمي</title>
+
+    <!-- ملف التنسيقات -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ملف اللغة -->
+    <script src="assets/lang.js"></script>
 </head>
 
 <body>
 
-<header>
-    <h1 data-i18n="site_title"></h1>
+    <!-- الهيدر -->
+    <header class="header">
+        <img src="assets/logo.png" class="logo" alt="Logo">
+        <h1 data-lang="site_title">السوق العالمي</h1>
+    </header>
 
-    <select id="langSelect" onchange="changeLang(this.value)">
-        <option value="ar">عربي</option>
-        <option value="en">English</option>
-        <option value="fr">Français</option>
-    </select>
-</header>
+    <!-- الأقسام -->
+    <section class="categories">
 
-<section class="hero">
-    <h2 data-i18n="welcome_title"></h2>
-    <p data-i18n="welcome_desc"></p>
-</section>
+        <a href="cars.html" class="box">
+            <h3 data-lang="cars">سيارات</h3>
+        </a>
 
-<section class="sections">
-    <a href="#" class="box" data-i18n="sec_commerce"></a>
-    <a href="#" class="box" data-i18n="sec_restaurants"></a>
-    <a href="#" class="box" data-i18n="sec_travel"></a>
-    <a href="#" class="box" data-i18n="sec_cars"></a>
-    <a href="#" class="box" data-i18n="sec_mobiles"></a>
-    <a href="#" class="box" data-i18n="sec_electronics"></a>
-    <a href="#" class="box" data-i18n="sec_fashion"></a>
-    <a href="#" class="box" data-i18n="sec_food"></a>
-</section>
+        <a href="phones.html" class="box">
+            <h3 data-lang="phones">جوالات</h3>
+        </a>
 
-<footer>
-    <p data-i18n="footer_text"></p>
-</footer>
+        <a href="real-estate.html" class="box">
+            <h3 data-lang="real_estate">عقارات</h3>
+        </a>
 
-<script>
-window.onload = () => loadLang('ar');
-</script>
+        <a href="electronics.html" class="box">
+            <h3 data-lang="electronics">الكترونيات</h3>
+        </a>
 
+        <a href="fashion.html" class="box">
+            <h3 data-lang="fashion">أزياء</h3>
+        </a>
+
+        <a href="jobs.html" class="box">
+            <h3 data-lang="jobs">وظائف</h3>
+        </a>
+
+        <a href="services.html" class="box">
+            <h3 data-lang="services">خدمات</h3>
+        </a>
+
+        <a href="market.html" class="box">
+            <h3 data-lang="general_market">سوق عام</h3>
+        </a>
+
+        <a href="about.html" class="box">
+            <h3 data-lang="about">من نحن</h3>
+        </a>
+
+        <a href="contact.html" class="box">
+            <h3 data-lang="contact">تواصل معنا</h3>
+        </a>
+
+    </section>
+
+    <!-- أسفل الصفحة -->
+    <footer class="footer">
+        <p>© 2025 - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-      </html>
+
+                                             </html>
