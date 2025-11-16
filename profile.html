@@ -1,15 +1,25 @@
+
 <!DOCTYPE html>
-<html lang="ar" dir="rtl"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>حسابي</title></head>
-<body style="font-family:Arial;padding:20px">
-<h2>حسابي</h2>
-<p id="u"></p>
-<p id="s"></p>
-<button onclick="logout()">تسجيل خروج</button>
-<script>
-  const u = localStorage.getItem('username');
-  if(!u){ alert('سجل الدخول'); window.location='login.html'; }
-  document.getElementById('u').innerText = 'المستخدم: ' + u;
-  document.getElementById('s').innerText = (localStorage.getItem('subscribed')==='true') ? 'الحالة: مشترك' : 'الحالة: غير مشترك';
-  function logout(){ localStorage.removeItem('username'); window.location='index.html'; }
-</script>
-</body></html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>حسابي</title>
+<style>
+body { font-family: sans-serif; background:#f7f7f7; padding:20px; }
+.card { background:white; padding:20px; border-radius:10px; max-width:400px; margin:auto; text-align:center; }
+button { width:100%; padding:12px; background:#ff5252; color:white; border:none; border-radius:6px; margin-top:15px; }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h2>مرحبا بك</h2>
+<p>الاسم: مستخدم جديد</p>
+<p>البريد: example@mail.com</p>
+<a href="add-product.html"><button style="background:#2a72ff;">نشر إعلان جديد</button></a>
+<button>تسجيل خروج</button>
+</div>
+
+</body>
+</html>
