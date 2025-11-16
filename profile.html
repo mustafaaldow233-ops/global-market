@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>الملف الشخصي</title>
-
-    <link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملف الشخصي | Continental Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lang.js" defer></script>
 </head>
 
 <body>
 
-    <!-- الهيدر -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="commerce.html">التجارة</a></li>
-                <li><a href="restaurants.html">المطاعم</a></li>
-                <li><a href="travel.html">السياحة والفنادق</a></li>
-                <li><a href="ads.html">الإعلانات</a></li>
-                <li><a href="profile.html">الملف الشخصي</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <div class="logo">Continental Market</div>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="categories.html">الأقسام</a>
+        <a href="ads.html">إعلاناتي</a>
+        <button class="lang-btn" onclick="toggleLang()">🌍 اللغة</button>
+    </nav>
+</header>
 
-    <div class="page-container">
+<div class="container">
 
-        <h2>الملف الشخصي</h2>
-        <p>إدارة بيانات حسابك.</p>
+    <h2 class="page-title">الملف الشخصي</h2>
 
-        <div class="profile-box">
+    <div class="profile-box">
 
-            <img src="assets/user.png" class="profile-img">
+        <img src="assets/user.png" class="profile-img" alt="User">
 
-            <h3>اسم المستخدم</h3>
+        <h3>مرحبا بك</h3>
+        <p>إدارة معلومات حسابك والتحكم في بياناتك.</p>
 
-            <button class="btn">تعديل المعلومات</button>
-            <button class="btn">تغيير الصورة</button>
-            <button class="btn">تسجيل الخروج</button>
+        <div class="profile-info">
+            <label>الاسم:</label>
+            <input type="text" placeholder="مثال: مصطفى مبارك">
 
+            <label>البريد الإلكتروني:</label>
+            <input type="email" placeholder="email@example.com">
+
+            <label>رقم الهاتف:</label>
+            <input type="tel" placeholder="+249 xxx xxx xxx">
+
+            <label>الدولة:</label>
+            <select>
+                <option>السودان</option>
+                <option>السعودية</option>
+                <option>الإمارات</option>
+                <option>مصر</option>
+                <option>تركيا</option>
+            </select>
+
+            <button class="save-btn">حفظ التعديلات 💾</button>
         </div>
+    </div>
+
+    <h3 class="section-title">خيارات الحساب</h3>
+
+    <div class="account-options">
+
+        <a class="option-card" href="ads.html">
+            <span>📢</span>
+            <p>إعلاناتي</p>
+        </a>
+
+        <a class="option-card" href="favorites.html">
+            <span>❤️</span>
+            <p>المفضلة</p>
+        </a>
+
+        <a class="option-card" href="settings.html">
+            <span>⚙️</span>
+            <p>الإعدادات</p>
+        </a>
+
+        <a class="option-card logout" href="#">
+            <span>🚪</span>
+            <p>تسجيل الخروج</p>
+        </a>
 
     </div>
 
+</div>
+
+<footer>جميع الحقوق محفوظة © Continental Market 2025</footer>
+
 </body>
-</html>
+    </html>
