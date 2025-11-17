@@ -59,3 +59,18 @@ footer {
   margin-top: 40px;
   font-size: 14px;
 }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #0066ff;
+  color: #fff;
+}
+header img {
+  height: 60px;
+}
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
