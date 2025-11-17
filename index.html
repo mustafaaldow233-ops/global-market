@@ -1,95 +1,44 @@
 <!DOCTYPE html>
+<html lang="ar">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- ربط ملف التنسيقات -->
-    <link rel="stylesheet" href="assets/style.css">
-
-    <!-- ربط ملف اللغات -->
-    <script src="assets/lang.js" defer></script>
-
-    <!-- ربط ملف وظائف الموقع -->
-    <script src="assets/main.js" defer></script>
-
-    <title>My Website</title>
-</head>
-<html lang="ar" dir="rtl">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>السوق العالمي</title>
-
-    <!-- ملف التنسيقات -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- ملف اللغة -->
-    <script src="assets/lang.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-    <div style="width:100%; background:#ddd; padding:10px; text-align:center;">
-    <img src="assets/ad-header.png" style="max-width:100%; height:auto;">
-    </div>
 
-    <!-- الهيدر -->
-    <header class="header">
-        <img src="assets/logo.png" class="logo" alt="Logo">
-        <h1 data-lang="site_title">السوق العالمي</h1>
-    </header>
+<header>
+    <div class="logo">السوق العالمي</div>
 
-    <!-- الأقسام -->
-    <section class="categories">
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="categories.html">الأقسام</a>
+        <a href="profile.html">حسابي</a>
+        <a href="about.html">من نحن</a>
+        <a href="contact.html">تواصل معنا</a>
+    </nav>
+</header>
 
-        <a href="cars.html" class="box">
-            <h3 data-lang="cars">سيارات</h3>
-        </a>
+<section class="hero">
+    <h2>أهلاً بك في السوق العالمي</h2>
+    <p>أفضل مكان لبيع وشراء المنتجات والعقارات والسيارات وغيرها.</p>
+</section>
 
-        <a href="phones.html" class="box">
-            <h3 data-lang="phones">جوالات</h3>
-        </a>
+<section class="categories">
+    <a href="#">🚗 سيارات</a>
+    <a href="#">📱 موبايلات</a>
+    <a href="#">🏠 عقارات</a>
+    <a href="#">💻 إلكترونيات</a>
+    <a href="#">👗 أزياء</a>
+    <a href="#">💼 وظائف</a>
+    <a href="#">🔧 خدمات</a>
+    <a href="#">🛒 سوق عام</a>
+</section>
 
-        <a href="real-estate.html" class="box">
-            <h3 data-lang="real_estate">عقارات</h3>
-        </a>
+<footer>
+    جميع الحقوق محفوظة © 2025
+</footer>
 
-        <a href="electronics.html" class="box">
-            <h3 data-lang="electronics">الكترونيات</h3>
-        </a>
-
-        <a href="fashion.html" class="box">
-            <h3 data-lang="fashion">أزياء</h3>
-        </a>
-
-        <a href="jobs.html" class="box">
-            <h3 data-lang="jobs">وظائف</h3>
-        </a>
-
-        <a href="services.html" class="box">
-            <h3 data-lang="services">خدمات</h3>
-        </a>
-
-        <a href="market.html" class="box">
-            <h3 data-lang="general_market">سوق عام</h3>
-        </a>
-
-        <a href="about.html" class="box">
-            <h3 data-lang="about">من نحن</h3>
-        </a>
-
-        <a href="contact.html" class="box">
-            <h3 data-lang="contact">تواصل معنا</h3>
-        </a>
-
-    </section>
-
-    <!-- أسفل الصفحة -->
-    <footer class="footer">
-        <p>© 2025 - جميع الحقوق محفوظة</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
-
-                                             </html>
+</html>
